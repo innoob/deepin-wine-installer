@@ -35,7 +35,7 @@ echo "[info] 正在刷新共享动态链接库..."
 sudo ldconfig
 echo "[info] 完成!"
 echo "[info] deepin-wine已经安装完成!"
-read -p "是否需要安装deepin-wine软件？[y/n]" ch
+read -p "是否需要安装基于 deepin-wine 的软件(TIM,QQ,迅雷...)？[y/n]" ch
 mkdir software
 while [ 1=1 ]
 do
@@ -85,6 +85,10 @@ case $soft in
 esac
     read -p "是否还要安装其他的deepin-wine软件？[y/n]" ch
 else
+	echo "[info] 正在进行最后的完整包依赖检查..."
+	sudo apt-get install -f
+	echo "[info] 依赖修复完成!"
+	echo "\n 请尽请使用deepin-wine的软件吧!\n"
 exit
 fi
 done
