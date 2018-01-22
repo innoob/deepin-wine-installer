@@ -36,6 +36,7 @@ echo "[info] 正在刷新共享动态链接库..."
 echo "[info] 完成!"
 echo "[info] deepin-wine已经安装完成!"
 read -p "是否需要安装deepin-wine软件？[y/n]" ch
+mkdir software
 while [ 1=1 ]
 do
 if [ "$ch" = "y" ];then
