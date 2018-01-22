@@ -1,7 +1,7 @@
 #/bin/sh
 clear
 echo "\n"
-echo "deepin-wine当前有一下版本:"
+echo "deepin-wine当前有以下版本:"
 echo "1). deepin-wine_1.9 (历史稳定版) "
 echo "2). deepin-wine_2.18 (最新稳定版,deepin-helper部分依赖不支持,已修正)"
 echo "\n"
