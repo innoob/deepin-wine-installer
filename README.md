@@ -22,7 +22,9 @@
 		sudo chmod +x remove.sh;./remove.sh
 
 ### 附注：
-	为了能在ubuntu中顺利执行安装，本人对其中大部分的软件包进行了依赖移除。经测试发现，在ubuntu上的运行效果并不如在deepin上的完美，如ubuntu上deepinqq点击视频通话即崩溃、deepinthunder部分图片无法显示等。
+	为了能在ubuntu中顺利执行安装，本人对其中大部分的软件包进行了依赖移除。
+	经测试发现，在ubuntu上的运行效果并不如在deepin上的完美，
+	如ubuntu上deepinqq点击视频通话即崩溃、deepinthunder部分图片无法显示等。
 	不过这一版的deepinqq和deepinthunder比起其他版本的wineqq和thunder来说更加高效和稳定。
 	qq能够记住密码，除视频通话、远程演示和内嵌音乐播放组件外几乎无bug。
 	thunder能够使用手机号登录，能够完美下载和加速。
