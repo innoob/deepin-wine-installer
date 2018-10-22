@@ -12,14 +12,14 @@ inst_dwine() {
 	echo "====================================================================="
 	echo "deepin-wine当前有以下版本:"
 	echo "1). deepin-wine_1.9 (历史稳定版) "
-	echo "2). deepin-wine_2.18 (最新稳定版,deepin-helper部分依赖不支持,已修正)"
+	echo "2). deepin-wine_2.18-2 (最新稳定版,deepin-helper部分依赖不支持,已修正)"
 	echo "====================================================================="
 	while [ 1=1 ]
 	do
 	read -p "请选择deepin-wine的版本[序号]：" version
 	case $version in
 	    1) version=1.9 break ;;
-	    2) version=2.18 break ;;
+	    2) version=2.18-2 break ;;
 	    *) echo "${R}[erro] 你的选择有错误，请重新选择!${N}" ;;
 	esac
 	done
