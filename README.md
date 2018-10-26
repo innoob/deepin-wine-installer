@@ -1,5 +1,9 @@
 ## 声明：软件来源于deepin，衷心感谢deepin团队。
 #### 目前仅在Ubuntu16.04,Ubuntu18.04和Mint17上测试通过，且仅支持deb系包环境，如果有什么需求或者缺陷请提Issues我会尽力解决的.
+### 新工具：deepin-source-installer (目前仅在Ubuntu18.04上测试过)
+[下载Release](https://github.com/InNoob/deepin-wine-installer/releases)
+#### 如果想要在ubuntu18.04上安装deepin-wine,tim,qq等软件的最新版，可直接添加deepin源，导入gpg-key，安装我修改后的依赖包就可顺利直接安装了.
+#### 也可以运行deepin-source目录下的deepin-source-installer.sh脚本一键安装
 ### 结构：
 	deepin-wine_commons文件夹中包含有deepin-wine所需的共有依赖包.
 	deepin-wine_<版本号>中为对应版本deepin-wine和deepin-wine-helper相关依赖包.
