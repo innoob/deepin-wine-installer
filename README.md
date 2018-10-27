@@ -4,6 +4,13 @@
 [下载Release](https://github.com/InNoob/deepin-wine-installer/releases)
 #### 如果想要在ubuntu18.04上安装deepin-wine,tim,qq等软件的最新版，可直接添加deepin源，导入gpg-key，安装我修改后的依赖包就可顺利直接安装了.
 #### 也可以运行deepin-source目录下的deepin-source-installer.sh脚本一键安装
+
+### 温馨链接:
+可用于ubuntu 18.04的网易云音乐
+
+[下载Release包](https://github.com/InNoob/netease-cloud-music/releases)
+
+
 ### 结构：
 	deepin-wine_commons文件夹中包含有deepin-wine所需的共有依赖包.
 	deepin-wine_<版本号>中为对应版本deepin-wine和deepin-wine-helper相关依赖包.
