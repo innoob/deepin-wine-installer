@@ -8,7 +8,7 @@
 ### 温馨链接:
 可用于ubuntu 18.04的网易云音乐
 
-[下载Release包](https://github.com/InNoob/netease-cloud-music/releases)
+[netease-cloud-music](https://github.com/InNoob/netease-cloud-music)
 
 
 ### 结构：
