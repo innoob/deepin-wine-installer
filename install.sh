@@ -69,7 +69,7 @@ inst_software() {
 		if [ ! -f "./software/deepin.com.qq.office.deb" ]; then
 			echo "${Y}[warn] 安装包未下载到本地!${N}"
 			echo "${B}[info] 正在从源地址下载TIM （deepin.com.qq.office)...${N}"
-			wget -O ./software/deepin.com.qq.office.deb http://mirrors.163.com/deepin/pool/non-free/d/deepin.com.qq.office/deepin.com.qq.office_2.0.0deepin1_i386.deb
+			wget -O ./software/deepin.com.qq.office.deb http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.office/deepin.com.qq.office_2.0.0deepin4_i386.deb
 			echo "${G}[info] 下载TIM （deepin.com.qq.office) 完成!${N}"
 		fi
 		echo "${B}[info] 正在安装TIM (deepin.com.qq.office)...${N}"
@@ -81,7 +81,7 @@ inst_software() {
 		if [ ! -f "./software/deepin.com.qq.im.deb" ]; then
 			echo "${Y}[warn] 安装包未下载到本地!${N}"
 			echo "${B}[info] 正在从源地址下载QQ （deepin.com.qq.im)...${N}"
-			wget -O ./software/deepin.com.qq.im.deb http://mirrors.163.com/deepin/pool/non-free/d/deepin.com.qq.im/deepin.com.qq.im_8.9.19983deepin19_i386.deb
+			wget -O ./software/deepin.com.qq.im.deb http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/deepin.com.qq.im_8.9.19983deepin23_i386.deb
 			echo "${G}[info] 下载QQ （deepin.com.qq.im) 完成!${N}"
 		fi
 		echo "${B}[info] 正在安装QQ  (deepin.com.qq.im)...${N}"
@@ -93,7 +93,7 @@ inst_software() {
 		if [ ! -f "./software/deepin.com.qq.im.light.deb" ]; then
 			echo "${Y}[warn] 安装包未下载到本地!${N}"
 			echo "${B}[info] 正在从源地址下载QQ轻聊版（deepin.com.qq.im.light)...${N}"
-			wget -O ./software/deepin.com.qq.im.light.deb http://mirrors.163.com/deepin/pool/non-free/d/deepin.com.qq.im.light/deepin.com.qq.im.light_7.9.14308deepin8_i386.deb
+			wget -O ./software/deepin.com.qq.im.light.deb http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im.light/deepin.com.qq.im.light_7.9.14308deepin8_i386.deb
 			echo "${G}[info] 下载QQ轻聊版（deepin.com.qq.im.light) 完成!${N}"
 		fi
 		echo "${B}[info] 正在安装QQ轻聊版 (deepin.com.qq.im.light)...${N}"
@@ -105,7 +105,7 @@ inst_software() {
 		if [ ! -f "./software/deepin.com.thunderspeed.deb" ]; then
 			echo "${Y}[warn] 安装包未下载到本地!${N}"
 			echo "${B}[info] 正在从源地址下载迅雷（deepin.com.thunderspeed)...${N}"
-			wget -O ./software/deepin.com.thunderspeed.deb http://mirrors.163.com/deepin/pool/non-free/d/deepin.com.thunderspeed/deepin.com.thunderspeed_7.10.35.366deepin17_i386.deb
+			wget -O ./software/deepin.com.thunderspeed.deb http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.thunderspeed/deepin.com.thunderspeed_7.10.35.366deepin17_i386.deb
 			echo "${G}[info] 下载迅雷（deepin.com.thunderspeed) 完成!${N}"
 		fi
 		echo "${B}[info] 正在安装迅雷 (deepin.com.thunderspeed)...${N}"
