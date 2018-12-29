@@ -61,6 +61,7 @@ inst_software() {
 	echo "2). QQ (deepin.com.qq.im) version:8.9"
 	echo "3). QQ轻聊版 (deepin.com.qq.im.light) version:7.9"
 	echo "4). 迅雷 (deepin.com.thunderspeed) version:7.10.35"
+	echo "5). 微信 (deepin.com.wechat) version:2.6.2"
 	echo "========================================================"
 	read -p "请选择你要安装的软件[序号]：" soft
 	case $soft in
@@ -69,7 +70,7 @@ inst_software() {
 		if [ ! -f "./software/deepin.com.qq.office.deb" ]; then
 			echo "${Y}[warn] 安装包未下载到本地!${N}"
 			echo "${B}[info] 正在从源地址下载TIM （deepin.com.qq.office)...${N}"
-			wget -O ./software/deepin.com.qq.office.deb http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.office/deepin.com.qq.office_2.0.0deepin4_i386.deb
+			wget -O ./software/deepin.com.qq.office.deb https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.office/deepin.com.qq.office_2.0.0deepin4_i386.deb
 			echo "${G}[info] 下载TIM （deepin.com.qq.office) 完成!${N}"
 		fi
 		echo "${B}[info] 正在安装TIM (deepin.com.qq.office)...${N}"
@@ -81,7 +82,7 @@ inst_software() {
 		if [ ! -f "./software/deepin.com.qq.im.deb" ]; then
 			echo "${Y}[warn] 安装包未下载到本地!${N}"
 			echo "${B}[info] 正在从源地址下载QQ （deepin.com.qq.im)...${N}"
-			wget -O ./software/deepin.com.qq.im.deb http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/deepin.com.qq.im_8.9.19983deepin23_i386.deb
+			wget -O ./software/deepin.com.qq.im.deb https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/deepin.com.qq.im_8.9.19983deepin23_i386.deb
 			echo "${G}[info] 下载QQ （deepin.com.qq.im) 完成!${N}"
 		fi
 		echo "${B}[info] 正在安装QQ  (deepin.com.qq.im)...${N}"
@@ -93,7 +94,7 @@ inst_software() {
 		if [ ! -f "./software/deepin.com.qq.im.light.deb" ]; then
 			echo "${Y}[warn] 安装包未下载到本地!${N}"
 			echo "${B}[info] 正在从源地址下载QQ轻聊版（deepin.com.qq.im.light)...${N}"
-			wget -O ./software/deepin.com.qq.im.light.deb http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im.light/deepin.com.qq.im.light_7.9.14308deepin8_i386.deb
+			wget -O ./software/deepin.com.qq.im.light.deb https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im.light/deepin.com.qq.im.light_7.9.14308deepin8_i386.deb
 			echo "${G}[info] 下载QQ轻聊版（deepin.com.qq.im.light) 完成!${N}"
 		fi
 		echo "${B}[info] 正在安装QQ轻聊版 (deepin.com.qq.im.light)...${N}"
@@ -105,12 +106,24 @@ inst_software() {
 		if [ ! -f "./software/deepin.com.thunderspeed.deb" ]; then
 			echo "${Y}[warn] 安装包未下载到本地!${N}"
 			echo "${B}[info] 正在从源地址下载迅雷（deepin.com.thunderspeed)...${N}"
-			wget -O ./software/deepin.com.thunderspeed.deb http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.thunderspeed/deepin.com.thunderspeed_7.10.35.366deepin17_i386.deb
+			wget -O ./software/deepin.com.thunderspeed.deb https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.thunderspeed/deepin.com.thunderspeed_7.10.35.366deepin17_i386.deb
 			echo "${G}[info] 下载迅雷（deepin.com.thunderspeed) 完成!${N}"
 		fi
 		echo "${B}[info] 正在安装迅雷 (deepin.com.thunderspeed)...${N}"
 		sudo dpkg -i software/deepin.com.thunderspeed.deb 
 		echo "${G}[info] 安装迅雷 (deepin.com.thunderspeed) 完成!${N}"
+	;;
+	5) 
+		echo "${B}[info] 正在检查本地安装包...${N}"
+		if [ ! -f "./software/deepin.com.wechat.deb" ]; then
+			echo "${Y}[warn] 安装包未下载到本地!${N}"
+			echo "${B}[info] 正在从源地址下载微信（deepin.com.wechat)...${N}"
+			wget -O ./software/deepin.com.wechat.deb https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.wechat/deepin.com.wechat_2.6.2.31deepin0_i386.deb
+			echo "${G}[info] 下载微信（deepin.com.wechat) 完成!${N}"
+		fi
+		echo "${B}[info] 正在安装微信（deepin.com.wechat)...${N}"
+		sudo dpkg -i software/deepin.com.wechat.deb 
+		echo "${G}[info] 安装微信（deepin.com.wechat) 完成!${N}"
 	;;
 		*) echo "${R}[erro] 你的选择有错误，请重新选择!${N}" ;;
 	esac
